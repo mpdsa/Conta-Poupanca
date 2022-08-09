@@ -5,16 +5,16 @@ public class ContaPoupanca {
   private double saldo;
   private String titularConta;
   
-  public ContaPoupanca(double saldo, String titularConta) {
+  public ContaPoupanca(String titularConta, double saldo) {
     this.saldo = saldo;
     this.titularConta = titularConta;
   }
 
-  public void depositar(Double valor) {
+  public void depositar(double valor) {
     this.saldo = this.saldo + valor;
   }
 
-  public void sacar(Double valor) {
+  public void sacar(double valor) {
     this.saldo = this.saldo - valor;
   }
   
